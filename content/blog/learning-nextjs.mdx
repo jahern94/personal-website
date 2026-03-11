@@ -1,0 +1,36 @@
+---
+title: "What I Learned Building My First Next.js Site"
+date: "2026-03-09"
+description: "A look at the key concepts I picked up while building this website with Next.js and Tailwind CSS."
+tags: ["next.js", "react", "web-dev"]
+---
+
+# What I Learned Building My First Next.js Site
+
+Building this website was my first real project with Next.js, and I learned a ton. Here are some of the key takeaways.
+
+## The App Router
+
+Next.js uses a file-based routing system. Every folder inside `src/app/` becomes a route, and you create a `page.tsx` file inside each folder. It feels really intuitive once you get the hang of it.
+
+## Tailwind CSS Makes Styling Fast
+
+Instead of writing separate CSS files, Tailwind lets you style things directly in your HTML with utility classes. At first it looked messy, but it's actually really productive once you learn the common patterns.
+
+## Static Export for Simple Hosting
+
+Since I'm hosting on a shared hosting provider, I needed my site to be plain HTML, CSS, and JavaScript files. Next.js has an `output: 'export'` option that generates a fully static site — no Node.js server needed.
+
+## MDX for Blog Posts
+
+MDX lets you write blog posts in Markdown (which is much easier than HTML) while still being able to use React components if needed. Each post is just a `.mdx` file with some metadata at the top.
+
+## What's Next
+
+I want to explore more features like:
+
+- Adding a dark mode toggle
+- Improving the blog with search and categories
+- Learning about animations with Framer Motion
+
+Stay tuned!
