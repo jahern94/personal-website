@@ -15,4 +15,12 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/jahern94",
     liveUrl: "/",
   },
+  {
+    title: "Weather App",
+    description:
+      "An interactive weather app with city search, current conditions, 7-day forecast, advanced metrics (UV index, pressure, visibility, and more), and a Fahrenheit/Celsius toggle. Powered by the Open-Meteo API.",
+    tags: ["Next.js", "React", "TypeScript", "Open-Meteo API", "Tailwind CSS"],
+    githubUrl: "https://github.com/jahern94/personal-website",
+    liveUrl: "/weather",
+  },
 ];
