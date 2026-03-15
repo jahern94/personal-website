@@ -23,4 +23,12 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/jahern94/personal-website",
     liveUrl: "/weather",
   },
+  {
+    title: "Lemonade Stand Game",
+    description:
+      "An interactive business simulation game where you run a lemonade stand. Learn pricing strategy, inventory management, supply & demand, and profit & loss through day-by-day gameplay with weather, upgrades, and random events.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Game"],
+    githubUrl: "https://github.com/jahern94/personal-website",
+    liveUrl: "/lemonade",
+  },
 ];
