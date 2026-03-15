@@ -14,12 +14,12 @@ export default function Home() {
       <Hero />
 
       {/* Featured Projects */}
-      <section className="max-w-5xl mx-auto px-6 py-16 border-t border-gray-100">
+      <section className="max-w-5xl mx-auto px-6 py-16 border-t border-gray-100 dark:border-gray-800">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold text-gray-900">Projects</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Projects</h2>
           <Link
             href="/projects"
-            className="text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors"
+            className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
           >
             View all &rarr;
           </Link>
@@ -32,12 +32,12 @@ export default function Home() {
       </section>
 
       {/* Recent Blog Posts */}
-      <section className="max-w-5xl mx-auto px-6 py-16 border-t border-gray-100">
+      <section className="max-w-5xl mx-auto px-6 py-16 border-t border-gray-100 dark:border-gray-800">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold text-gray-900">Recent Posts</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Recent Posts</h2>
           <Link
             href="/blog"
-            className="text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors"
+            className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
           >
             View all &rarr;
           </Link>

@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
         Get In Touch
       </h1>
-      <p className="text-lg text-gray-600 mb-10">
+      <p className="text-lg text-gray-600 dark:text-gray-400 mb-10">
         Have a question, want to work together, or just want to say hi? Drop me
         a message and I&apos;ll get back to you as soon as I can.
       </p>
@@ -23,10 +23,10 @@ export default function ContactPage() {
           <ContactForm />
         </div>
         <div>
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
             Other Ways to Connect
           </h2>
-          <p className="text-sm text-gray-600 mb-6">
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
             You can also find me on these platforms:
           </p>
           <SocialLinks />

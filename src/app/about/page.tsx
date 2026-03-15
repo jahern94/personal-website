@@ -19,13 +19,13 @@ const skills = [
 export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-8">
         About Me
       </h1>
 
       {/* Bio */}
-      <div className="prose prose-gray max-w-none mb-12">
-        <p className="text-lg text-gray-600 leading-relaxed">
+      <div className="prose prose-gray dark:prose-invert max-w-none mb-12">
+        <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
           Hello! I&apos;m Jack and I&apos;m a technology sales professional
           learning AI by doing. I plan on updating this page with applications
           I built, lessons I&apos;ve learned and sharing other cool things
@@ -35,12 +35,12 @@ export default function AboutPage() {
 
       {/* Skills */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Skills</h2>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">Skills</h2>
         <div className="flex flex-wrap gap-3">
           {skills.map((skill) => (
             <span
               key={skill}
-              className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-medium rounded-full"
+              className="px-4 py-2 bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-sm font-medium rounded-full"
             >
               {skill}
             </span>
@@ -50,7 +50,7 @@ export default function AboutPage() {
 
       {/* Interests */}
       <section>
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Interests</h2>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">Interests</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             {
@@ -72,12 +72,12 @@ export default function AboutPage() {
           ].map((interest) => (
             <div
               key={interest.title}
-              className="p-4 border border-gray-200 rounded-xl"
+              className="p-4 border border-gray-200 dark:border-gray-700 rounded-xl"
             >
-              <h3 className="font-semibold text-gray-900 mb-1">
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
                 {interest.title}
               </h3>
-              <p className="text-sm text-gray-600">{interest.desc}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{interest.desc}</p>
             </div>
           ))}
         </div>

@@ -34,15 +34,15 @@ export default function ContactForm() {
     return (
       <div className="text-center py-12">
         <div className="text-4xl mb-4">&#10003;</div>
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
           Message sent!
         </h3>
-        <p className="text-gray-600">
+        <p className="text-gray-600 dark:text-gray-400">
           Thanks for reaching out. I&apos;ll get back to you soon.
         </p>
         <button
           onClick={() => setStatus("idle")}
-          className="mt-4 text-blue-600 hover:text-blue-800 font-medium"
+          className="mt-4 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium"
         >
           Send another message
         </button>
@@ -53,7 +53,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+        <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
           Name
         </label>
         <input
@@ -61,12 +61,12 @@ export default function ContactForm() {
           id="name"
           name="name"
           required
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-shadow"
+          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-shadow"
           placeholder="Your name"
         />
       </div>
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+        <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
           Email
         </label>
         <input
@@ -74,12 +74,12 @@ export default function ContactForm() {
           id="email"
           name="email"
           required
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-shadow"
+          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-shadow"
           placeholder="your@email.com"
         />
       </div>
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+        <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
           Message
         </label>
         <textarea
@@ -87,12 +87,12 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-shadow resize-none"
+          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-shadow resize-none"
           placeholder="What would you like to say?"
         />
       </div>
       {status === "error" && (
-        <p className="text-red-600 text-sm">
+        <p className="text-red-600 dark:text-red-400 text-sm">
           Something went wrong. Please try again.
         </p>
       )}

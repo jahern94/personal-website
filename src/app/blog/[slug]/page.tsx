@@ -45,20 +45,20 @@ export default async function BlogPostPage({
     <article className="max-w-3xl mx-auto px-6 py-16 md:py-24">
       <Link
         href="/blog"
-        className="text-sm text-blue-600 hover:text-blue-800 transition-colors mb-8 inline-block"
+        className="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mb-8 inline-block"
       >
         &larr; Back to blog
       </Link>
 
       <header className="mb-10">
-        <time className="text-sm text-gray-400">
+        <time className="text-sm text-gray-400 dark:text-gray-500">
           {new Date(post.date).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
             day: "numeric",
           })}
         </time>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mt-2 mb-4">
           {post.title}
         </h1>
         {post.tags.length > 0 && (
@@ -66,7 +66,7 @@ export default async function BlogPostPage({
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs font-medium px-2.5 py-1 bg-gray-100 text-gray-600 rounded-full"
+                className="text-xs font-medium px-2.5 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-full"
               >
                 {tag}
               </span>
@@ -75,7 +75,7 @@ export default async function BlogPostPage({
         )}
       </header>
 
-      <div className="prose prose-gray max-w-none">
+      <div className="prose prose-gray dark:prose-invert max-w-none">
         <MDXRemote source={post.content} components={components} />
       </div>
     </article>
